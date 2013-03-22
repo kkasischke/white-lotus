@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the icm-wysiwyg-editor feature.
+ */
+
+include_once 'icm_wysiwyg_editor.features.inc';

@@ -1,0 +1,6 @@
+name = ICM Custom CKEditor
+description = Custom configuration for CKEditor
+dependencies[] = wysiwyg
+package = ICM
+core = 7.x
+version = 7.x-1.1
