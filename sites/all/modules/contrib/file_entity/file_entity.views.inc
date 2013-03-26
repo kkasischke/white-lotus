@@ -93,7 +93,27 @@ function file_entity_views_data() {
     ),
   );
 
+  // Usage link.
+  $data['file_managed']['usage'] = array(
+    'title' => t('Usage link'),
+    'help' => t('Provide a simple link to view the usage of the file entity.'),
+    'field' => array(
+      'handler' => 'views_handler_field_file_link_usage',
+      'real field' => 'fid',
+      'additional fields' => array(
+        'fid',
+      ),
+    ),
+  );
+
   return $data;
+}
+
+/**
+ * Implements hook_views_data_alter().
+ */
+function file_entity_views_data_alter(&$data) {
+  $data['file_managed']['filename']['field']['handler'] = 'views_handler_field_file_filename';
 }
 
 /**
