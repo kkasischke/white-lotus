@@ -11,6 +11,6 @@
  * for more information on this topic.
  */
 //add custom js file for this theme
- drupal_add_js(drupal_get_path('theme', '[white_lotus_farms]') . '/js/[white_lotus_farms].js',
+ drupal_add_js(drupal_get_path('theme', 'white_lotus_farms') . '/js/wlf.js',
 	array('type' => 'file', 'scope' => 'footer', 'weight' => 1, 'group' => JS_THEME)
  );
